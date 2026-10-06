@@ -1,3 +1,33 @@
+### Docker
+
+#### 1. Build the image
+
+```sh
+docker build -t ynov/tp-1:latest .
+```
+
+#### 2. Log in to Docker Hub
+
+```sh
+docker login
+```
+
+#### 3. Push the image
+
+```sh
+docker push ynov/tp-1:latest
+```
+
+#### 4. Run the container
+
+```sh
+docker run --rm -p 8080:80 ynov/tp-1:latest
+```
+
+The app is then available at http://localhost:8080.
+
+
+
 # tp-1
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -40,31 +70,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-### Docker
-
-#### 1. Build the image
-
-```sh
-docker build -t ynov/tp-1:latest .
-```
-
-#### 2. Log in to Docker Hub
-
-```sh
-docker login
-```
-
-#### 3. Push the image
-
-```sh
-docker push ynov/tp-1:latest
-```
-
-#### 4. Run the container
-
-```sh
-docker run --rm -p 8080:80 ynov/tp-1:latest
-```
-
-The app is then available at http://localhost:8080.
