@@ -26,6 +26,32 @@ docker run --rm -p 8080:80 ynov/tp-1:latest
 
 The app is then available at http://localhost:8080.
 
+### Docker Compose
+
+#### Build and start
+
+```sh
+docker compose up -d --build
+```
+
+#### Show logs
+
+```sh
+docker compose logs -f
+```
+
+#### Push the image
+
+```sh
+docker compose push
+```
+
+#### Stop and remove
+
+```sh
+docker compose down
+```
+
 
 
 # tp-1
